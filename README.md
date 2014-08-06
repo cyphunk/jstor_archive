@@ -21,7 +21,7 @@ Defaults are configured for Firefox browsers on Linux systems. For OSX change th
    monkey) or directly if your browser supports it by accessing the raw 
    [jstor_clicknext.user.js](https://github.com/cyphunk/jstor_archive/raw/master/jstor_clicknext.user.js)
 3. ``cd jstor_archive`` and ``./cache_monitor.sh EXAMPLE_NAME`` (where ``EXAMPLE_NAME`` is the directory to be created within the current directory for storing GIF's. This name will also be used as the name for the PDF and HTML indexes that will be created later) 
-4. If the ``CACHE_DIR`` being monitored is different from that of your 
+4. If the monitored ``CACHE_DIR`` shown own on exeuction is different from that of your 
    browser (tested with Linux Firefox) change the ``CACHE_DIR`` enviornment
    variable and execute again.
 5. Open a JSTOR article in the browser
