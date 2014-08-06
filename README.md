@@ -19,13 +19,13 @@ Defaults are configured for Firefox browsers on Linux systems. For OSX change th
 1. ``git clone https://github.com/cyphunk/jstor_archive.git``
 2. Install Javascript userscript via User Script manager (such as grease 
    monkey) or directly if your browser supports it by accessing the raw 
-   [jstor_clicknext.user.js](https://github.com/cyphunk/jstor_archive/raw/master/jstor_clicknext.user.js)
-3. ``cd jstor_archive`` and ``./cache_monitor.sh EXAMPLE_NAME`` (where ``EXAMPLE_NAME`` is the directory to be created within the current directory for storing GIF's. This name will also be used as the name for the PDF and HTML indexes that will be created later) 
-4. If the monitored ``CACHE_DIR`` shown on exeuction is different from that of your 
+   [jstor_clicknext.user.js](https://github.com/cyphunk/jstor_archive/raw/master/jstor_clicknext.user.js).
+3. ``cd jstor_archive`` and ``./cache_monitor.sh EXAMPLE_NAME`` where ``EXAMPLE_NAME`` is the directory to be created within the current directory for storing GIF's. This name will also be used as the name for the PDF and HTML indexes that will be created later.
+4. If the monitored ``CACHE_DIR`` shown on execution is different from that of your 
    browser (tested with Linux Firefox) change the ``CACHE_DIR`` enviornment
    variable and execute again.
-5. Open a JSTOR article in the browser
+5. Open a JSTOR article in your browser.
 6. When all pages of the article have been viewed, either by manually
    clicking through each page or by letting the ``jstor_clicknext.user.js``
    user script do it, press "``ctrl+c``" in the scripts.
-   PDF and HTML files will be created in the ``EXAMPLE_NAME`` directory
+   PDF and HTML files will be created in the ``EXAMPLE_NAME`` directory.
