@@ -32,8 +32,9 @@ fi
 
 STORE_NAME="$1"
 STORE_DIR=`pwd`/$STORE_NAME
-echo "Will keep all gifs of width 760 created after now and store them in $STORE_DIR"
-mkdir $STORE_DIR
+echo "Monitoring CACHE_DIR: ${CACHE_DIR}"
+echo "Will store all GIF's with width GIF_WIDTH: ${GIF_WIDTH} in"
+echo "$STORE_DIR"
 cd $CACHE_DIR
 
 

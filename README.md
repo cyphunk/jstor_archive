@@ -16,15 +16,16 @@ articles contents.
 
 Defaults are configured for Firefox browsers on Linux systems. For OSX change the ``CACHE_DIR`` path appropriately. 
 
-1. Clone scripts
-2. Install javascript user script in browser (greasemonkey or
-   other manager). This is not required but it helps automate the cache
-   fillup. Without it you have to manually click "next" on a JSTOR article
-   in order to fill the cache
-3. Execute the shell script with a "name" as an argument. It will monitor 
-   ``CACHE_DIR`` for GIF's that match ``GIF_WIDTH`` and copy them into a 
-   directory named ``<name>``
-4. Open a JSTOR article in the browser
-5. When all pages of the article have been viewed press "``ctrl+c``" in 
-   the scripts execution window. PDF and HTML files will be created in 
-   the ``<name>`` directory.
+1. ``git clone https://github.com/cyphunk/jstor_archive.git``
+2. Install Javascript userscript via User Script manager (such as grease 
+   monkey) or directly if your browser supports it by accessing the raw 
+   [jstor_clicknext.user.js](https://github.com/cyphunk/jstor_archive/raw/master/jstor_clicknext.user.js)
+3. ``cd jstor_archive`` and ``./cache_monitor.sh EXAMPLE_NAME`` (where ``EXAMPLE_NAME`` is the directory to be created within the current directory for storing GIF's. This name will also be used as the name for the PDF and HTML indexes that will be created later) 
+4. If the ``CACHE_DIR`` being monitored is different from that of your 
+   browser (tested with Linux Firefox) change the ``CACHE_DIR`` enviornment
+   variable and execute again.
+5. Open a JSTOR article in the browser
+6. When all pages of the article have been viewed, either by manually
+   clicking through each page or by letting the ``jstor_clicknext.user.js``
+   user script do it, press "``ctrl+c``" in the scripts.
+   PDF and HTML files will be created in the ``EXAMPLE_NAME`` directory
