@@ -1,5 +1,5 @@
 Found it dificult to find scripts that help archive JSTOR content. This is
-surprising considering their sordid history in relation to Aarron Swartz.
+surprising considering their sordid history in relation to Aaron Swartz.
 
 These scripts do not download PDF content of privileged JSTOR users. For
 that look elsewhere. Instead these scripts allow for archiving of articles
